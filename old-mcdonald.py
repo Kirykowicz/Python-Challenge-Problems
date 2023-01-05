@@ -1,8 +1,9 @@
 def old_mcdonald(name):
-    name[0] = name[0].capitalize()
-    name[3] = name[3].capitalize()
-    return name
+    first_letter = name[0]
+    inbetween = name[1:3]
+    rest = name[3:]
 
-example = old_mcdonald('robert')
 
-print(example)
+    return first_letter.capitalize() + inbetween + rest.capitalize()
+
+print(old_mcdonald('robert'))
